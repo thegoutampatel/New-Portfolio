@@ -1,0 +1,119 @@
+#projects {
+    width: 100%;
+    background-color: var(--blue);
+    position: relative;
+    color: var(--grey);
+    padding: 5rem 2rem;
+  }
+  
+  #projects h2 {
+    width: 200px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1.2rem;
+    margin-bottom: 8rem;
+  }
+  
+  .custom-shape-divider-top-1639338384 {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .custom-shape-divider-top-1639338384 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 3rem;
+  }
+  
+  .custom-shape-divider-top-1639338384 .shape-fill {
+    fill: #222831;
+  }
+  .projects-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 2vw;
+  }
+  .card {
+    width: 24rem;
+    height: 36rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  }
+  .card img{
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    margin-top: 3px;
+    height: 70%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: opacity .2s ease-out;
+  }
+  .card img:hover{
+    opacity: 50%;
+  }
+  .card-content h3{
+    position: absolute;
+    inset: auto auto 80px 75px;
+    font-weight: normal;
+    font-size: medium;
+  }
+  #tech{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    position: absolute;
+    inset: auto auto 5px 10px;
+  }
+  #tech i{
+    font-size: 2rem;
+    color: white ;
+  }
+  #tech p{
+    font-size: 10px;
+  }
+  #tech i:hover{
+    color: var(--black);
+  }
+  #tech p:hover{
+    color: var(--black);
+  }
+  .card-content h4{
+    font-weight: normal;
+    font-size: medium;
+  }
+  #link-icon{
+    position: absolute;
+    inset: auto auto 30px 50px;
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+  }
+  #card-github{
+    position: absolute;
+    inset: auto auto 30px 140px;
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    transition: all;
+  }
+  #card-github:hover{
+    color: red;
+  }
+  #link-icon:hover{
+    color: red;
+  }

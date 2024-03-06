@@ -1,0 +1,121 @@
+#contact {
+    width: 100%;
+    width: 100%;
+    padding: 5rem 2rem;
+    color: var(--grey);
+    background-color: var(--black);
+    position: relative;
+  }
+  
+  .custom-shape-divider-top-1639343571 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .custom-shape-divider-top-1639343571 svg {
+    position: relative;
+    display: block;
+    width: calc(102% + 1.3px);
+    height: 38px;
+  }
+  
+  .custom-shape-divider-top-1639343571 .shape-fill {
+    fill: #2d4059;
+  }
+  
+  .custom-shape-divider-bottom-1639370022 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1639370022 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 48px;
+  }
+  
+  .custom-shape-divider-bottom-1639370022 .shape-fill {
+    fill: #2d4059;
+  }
+  
+  #contact h2 {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1.2rem;
+  }
+  
+  .contact--left {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .contact--left p {
+    font-size: 1.5rem;
+    line-height: 1.75;
+    margin-top: 2rem;
+  }
+  
+  .contact--left > a {
+    display: block;
+    width: 80%;
+    max-width: 280px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.45rem;
+    text-decoration: none;
+    color: var(--grey);
+    font-weight: 600;
+    background-color: var(--orange);
+    transition: transform 200ms ease-in;
+  }
+  
+  .contact--left > a:hover {
+    transform: scale(1.05);
+  }
+  
+  .contact--links {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--orange);
+    font-size: 2rem !important;
+    margin-top: 2.5rem;
+  }
+  
+  .links li a > img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  
+  .links li a {
+    border-radius: 3rem;
+    display: block;
+    width: 70%;
+    margin: 2rem auto;
+    padding: 1.25rem 1rem;
+    border: 1px solid var(--orange);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    color: var(--grey);
+    font-size: 1.55rem;
+    text-decoration: none;
+  }
