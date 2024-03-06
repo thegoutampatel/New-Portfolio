@@ -14,6 +14,8 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #222831 #2d4059 ;
 }
 
 :root {

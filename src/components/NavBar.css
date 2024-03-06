@@ -1,7 +1,7 @@
 nav {
     width: 100%;
-    min-height: 14vh;
-    background-color: var(--black);
+    min-height: 10vh;
+    background-color: var(--blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +43,8 @@ nav {
   }
   
   .nav-links li a:hover {
-    color: hsl(0, 0%, 85%);
+    /* color: hsl(0, 0%, 85%); */
+    color: var(--black);
   }
   
   .resume {

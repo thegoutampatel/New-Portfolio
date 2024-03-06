@@ -5,16 +5,22 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { useMediaQuery } from 'react-responsive';
+import MobileNav from './components/MobileNav'
 
 const App = () => {
+  const isMobile = window.innerWidth <= 768;
+  const isDesktop = window.innerWidth >= 768;
+
   return (
     <div>
-      <NavBar/>
+      {!isMobile && <NavBar />}
       <Home/>
       <About/>
       <Projects/>
       <Contact/>
       <Footer/>
+      <MobileNav/>
     </div>
   )
 }

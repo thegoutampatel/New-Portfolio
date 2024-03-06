@@ -1,5 +1,6 @@
 #about {
     width: 100%;
+    min-height: 90vh;
     padding: 5rem 2rem;
     color: var(--grey);
     background-color: var(--black);
