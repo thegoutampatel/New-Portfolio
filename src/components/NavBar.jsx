@@ -3,6 +3,7 @@ import './NavBar.css'
 import dowicon from '../assets/images/downloadIcon.png'
 import Logo from '../assets/images/Logo.webp'
 
+
 const NavBar = () => {
   return (
     <nav>
@@ -14,10 +15,11 @@ const NavBar = () => {
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
-          <a href="./files/GoutamPatel_Resume.pdf" class="resume" download="">
+          {/* <a href="./files/GoutamPatel_Resume.pdf" class="resume" download="">
             Resume
             <img src={dowicon} alt="download" />
-          </a>
+          </a> */}
+          <a href="">Education</a>
         </li>
       </ul>
 

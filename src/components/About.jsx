@@ -1,5 +1,11 @@
 import React from 'react'
 import './About.css'
+import aboutImg from '../assets/images/about.svg'
+import arrow from '../assets/images/arrow.svg'
+import downImg from '../assets/images/download.svg'
+import Button from './Button'
+import { VscCloudDownload } from "react-icons/vsc";
+
 const About = () => {
   return (
     <section id="about">
@@ -16,9 +22,10 @@ const About = () => {
           ></path>
         </svg>
       </div>
-      <div class="about--left">
-        <h2>About Me</h2>
-        <p class="about--text">
+      <div class="relative flex flex-col items-center justify-center">
+        <img src={arrow} alt="" className='absolute top-[-20px] left-10 animate-scale' />
+        <h2 className=' text-[30px] font-semibold'>About Me</h2>
+        <p className="about--text lg:max-w-[30vw] mb-10">
           I am currently an undergraduate student pursuing a{" "}
           <span id="about--degree">
             Bachelor of Technology in Computer Science and Engineering.
@@ -27,8 +34,30 @@ const About = () => {
           specifically focusing on the MERN stack. My goal is to acquire the
           skills needed to create responsive websites
         </p>
+        <a href="./files/GoutamPatel_Resume.pdf" class="resume" download="">
+        <Button name={"Resume"} src={downImg}/>
+        </a>
+       
       </div>
-      <div class="about--right">
+      <div className='class="about--right"'>
+          <img src={aboutImg} alt=""  className='w-[30vw] h-[50vh]'/>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <div class="about--right">
         <p class="about--tech">Technologies I use</p>
         <div class="tech">
           <div>
@@ -59,7 +88,7 @@ const About = () => {
             <img src="./Images/figma.svg" alt="figma" />
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -2,6 +2,8 @@ import React from 'react';
 import './Home.css';
 import myimg from '../assets/images/me.jpg'
 import { TypeAnimation } from 'react-type-animation';
+import Button from './Button';
+import { CiPaperplane } from "react-icons/ci";
 
 const Home = () => {
   return (
@@ -19,7 +21,7 @@ const Home = () => {
       <div className="home-content">
         <div className="home--text">
           <p className='font-semibold text-7xl mb-5'>Hi, I'm Goutam</p>
-          <div className='flex gap-2'>
+          <div className='flex gap-2 mb-10'>
             <p>I am a </p>
             <TypeAnimation
               preRenderFirstString={true}
@@ -39,7 +41,7 @@ const Home = () => {
               repeat={Infinity}
            />
           </div>
-          <button>Contact Me</button>
+          <Button name={"Contact Me"} logo={<CiPaperplane />}/>
         </div>
         <div className="home--image">
           <img src={myimg} alt="profile" />

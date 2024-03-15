@@ -14,13 +14,14 @@ const App = () => {
 
   return (
     <div>
+      {!isDesktop && <MobileNav/>}
       {!isMobile && <NavBar />}
       <Home/>
       <About/>
       <Projects/>
       <Contact/>
       <Footer/>
-      <MobileNav/>
+      
     </div>
   )
 }

@@ -1,9 +1,9 @@
-import React from 'react'
-
-
-import './Contact.css'
-
+import React, {useState } from 'react'
+import './Contact.css';
+import axios from 'axios';
+import EmailForm from './EmailForm';
 const Contact = () => {
+  
   return (
     <section id="contact">
     <div class="custom-shape-divider-top-1639343571">
@@ -22,33 +22,9 @@ const Contact = () => {
       <a href="mailto:goutampatel9131@gmail.com">Email Me</a>
     </div>
     <div class="contact--right">
-      {/* <p class="contact--links">Where Can You Find Me ?</p>
-      <ul class="links">
-        <li>
-          <a href="https://www.linkedin.com/in/goutam-patel" target="_blank">
-            LinkedIn
-            <img src="./Images/linkedin.svg" alt="icon">
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/thegoutampatel" target="_blank">
-            Github
-            <img src="./Images/github.svg" alt="icon">
-          </a>
-        </li>
-        <!-- <li>
-          <a href="https://www.frontendmentor.io/profile/thegoutampatel" target="_blank">
-            Front End Mentor
-            <img src="./Images/frontendmentor.svg" alt="icon">
-          </a>
-        </li> -->
-        <li>
-          <a href="https://www.instagram.com/gm__patel_01/" target="_blank">
-            Instagram
-            <img src="./Images/instagram.svg" alt="icon">
-          </a>
-        </li>
-      </ul> */}
+
+    <EmailForm/>
+      
     </div>
 </section>
   )
