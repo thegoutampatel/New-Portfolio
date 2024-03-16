@@ -113,7 +113,7 @@
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    border: 0.8rem solid var(--orange);
+    border: 0.5rem solid var(--orange);
     overflow: hidden;
     animation: opening2 900ms ease-in;
 }

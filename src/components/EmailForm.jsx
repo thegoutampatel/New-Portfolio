@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import down from '../assets/images/download.svg'
 
 
 const EmailForm = () => {

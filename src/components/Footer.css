@@ -1,15 +1,7 @@
 
-footer {
-    width: 100%;
-    min-height: 12vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  
-  footer p {
+  /* footer p {
     color: var(--grey);
     font-size: 1.55rem;
     text-align: center;
-  }
+  } */
   

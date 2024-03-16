@@ -3,7 +3,9 @@ import './Home.css';
 import myimg from '../assets/images/me.jpg'
 import { TypeAnimation } from 'react-type-animation';
 import Button from './Button';
-import { CiPaperplane } from "react-icons/ci";
+import { FaLinkedin } from "react-icons/fa";
+
+
 
 const Home = () => {
   return (
@@ -41,7 +43,7 @@ const Home = () => {
               repeat={Infinity}
            />
           </div>
-          <Button name={"Contact Me"} logo={<CiPaperplane />}/>
+          <a href="https://www.linkedin.com/in/goutam-patel/" target='_black'><Button name={"Connect With"} logo={<FaLinkedin />}/></a>
         </div>
         <div className="home--image">
           <img src={myimg} alt="profile" />

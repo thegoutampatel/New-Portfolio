@@ -1,14 +1,14 @@
 import React from 'react'
 import './NavBar.css'
 import dowicon from '../assets/images/downloadIcon.png'
-import Logo from '../assets/images/Logo.webp'
+import Logo from '../assets/images/logoo.svg'
 
 
 const NavBar = () => {
   return (
     <nav>
       <div class="logo">
-        <img className='w-[100px] h-[50px]' src={Logo} alt="" />
+        <img className='w-[100px] h-[100px]' src={Logo} alt="" />
       </div>
       <ul className="nav-links">
         <li><a href="#about">About</a></li>

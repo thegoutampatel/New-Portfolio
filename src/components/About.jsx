@@ -39,8 +39,8 @@ const About = () => {
         </a>
        
       </div>
-      <div className='class="about--right"'>
-          <img src={aboutImg} alt=""  className='w-[30vw] h-[50vh]'/>
+      <div className="about--right">
+          <img src={aboutImg} alt=""  className='lg:w-[30vw] lg:h-[50vh] w-[80vw] h-[50vh]'/>
       </div>
 
 

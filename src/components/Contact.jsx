@@ -2,6 +2,14 @@ import React, {useState } from 'react'
 import './Contact.css';
 import axios from 'axios';
 import EmailForm from './EmailForm';
+import chat from '../assets/images/chat.svg'
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FiInstagram } from "react-icons/fi";
+
+
+
 const Contact = () => {
   
   return (
@@ -17,9 +25,18 @@ const Contact = () => {
       </svg>
   </div>
     <div class="contact--left">
-      <h2>Contact Me</h2>
+      <div className=' flex'>
+        <h2 className='text-[30px] font-semibold'>Contact Me</h2> 
+        <img src={chat} alt="" className='w-[30px]'/>
+      </div>
       <p>Feel free to get in touch, If you have any suggestions or any oppurtunities please Email me and I'll get back to you soon</p>
-      <a href="mailto:goutampatel9131@gmail.com">Email Me</a>
+      <div className='flex gap-12 mt-8'>
+        <a href=""><FaLinkedin className=' text-[30px] hover:text-[#ff5722]'/></a>
+        <a href=""><FaGithub className=' text-[30px] hover:text-[#ff5722]'/></a>
+        <a href=""><FaXTwitter className=' text-[30px] hover:text-[#ff5722]'/></a>
+        <a href=""><FiInstagram className=' text-[30px] hover:text-[#ff5722]'/></a>
+        
+      </div>
     </div>
     <div class="contact--right">
 
