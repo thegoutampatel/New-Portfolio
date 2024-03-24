@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import myimg from '../assets/images/me.jpg'
+import laptop from '../assets/images/laptop.svg';
 import { TypeAnimation } from 'react-type-animation';
 import Button from './Button';
 import { FaLinkedin } from "react-icons/fa";
@@ -45,9 +46,12 @@ const Home = () => {
           </div>
           <a href="https://www.linkedin.com/in/goutam-patel/" target='_black'><Button name={"Connect With"} logo={<FaLinkedin />}/></a>
         </div>
-        <div className="home--image">
-          <img src={myimg} alt="profile" />
+        <div className="lg:w-[25vw] w-[50vw] " id=''>
+          <img src={laptop} alt="profile" />
         </div>
+      </div>
+      <div className=''>
+        <a href='#about' class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
       </div>
     </section>
   );

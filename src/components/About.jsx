@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import aboutImg from '../assets/images/about.svg'
+import myimg from '../assets/images/me.jpg'
 import arrow from '../assets/images/arrow.svg'
 import downImg from '../assets/images/download.svg'
 import Button from './Button'
@@ -40,7 +40,7 @@ const About = () => {
        
       </div>
       <div className="about--right">
-          <img src={aboutImg} alt=""  className='lg:w-[30vw] lg:h-[50vh] w-[80vw] h-[50vh]'/>
+          <img src={myimg} alt="" className='home--image'/>
       </div>
 
 

@@ -1,6 +1,6 @@
 #about {
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     padding: 5rem 2rem;
     color: var(--grey);
     background-color: var(--black);
@@ -94,6 +94,12 @@
   
   .tech li {
     font-size: 1.5rem;
+  }
+  .home--image{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 0.5rem solid var(--orange);
   }
   
   @keyframes animSkill {
