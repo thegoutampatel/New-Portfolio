@@ -47,7 +47,7 @@ const Home = () => {
           <a href="https://www.linkedin.com/in/goutam-patel/" target='_black'><Button name={"Connect With"} logo={<FaLinkedin />}/></a>
         </div>
         <div className="lg:w-[25vw] w-[50vw] " id=''>
-          <img src={laptop} alt="profile" />
+          <img src={laptop} alt="profile" className=' pointer-events-none'/>
         </div>
       </div>
       <div className=''>

@@ -1,5 +1,4 @@
 import React from 'react'
-import './About.css'
 import myimg from '../assets/images/me.jpg'
 import arrow from '../assets/images/arrow.svg'
 import downImg from '../assets/images/download.svg'
@@ -42,17 +41,6 @@ const About = () => {
       <div className="about--right">
           <img src={myimg} alt="" className='home--image'/>
       </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 

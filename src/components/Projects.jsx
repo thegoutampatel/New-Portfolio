@@ -1,28 +1,18 @@
 import React from 'react'
 import pimg from '../assets/images/Personal-Portfolio.jpg';
-import './Projects.css'
+import Button from './Button'
+import { FaCode } from "react-icons/fa6";
+import { GoLink } from "react-icons/go";
+
+import {projects} from '../data/data'
 const Projects = () => {
-  const foodData = [
-    {
-      name: "Youtube Clone",
-      link: "www.google.com",
-      Github: "www.github.com",
-      image: "/images/egg.png",
-      type: "FrontEnd",
-    },
-    {
-      name: "RAMEN",
-      price: 25,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      image: "/images/ramen.png",
-      type: "lunch",
-    },
-  ];
- 
+
+
+  const skills = ["react", "css", "html", "js", "nodejs", "tailwind"];
 
   return (
     <section id="projects">
-      <div class="custom-shape-divider-top-1639338384">
+      <div className="custom-shape-divider-top-1639338384">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -31,140 +21,64 @@ const Projects = () => {
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="shape-fill"
+            className="shape-fill"
           ></path>
         </svg>
       </div>
-      <h2 className="text-[30px] font-semibold">Skills</h2>
-      <div class="projects-list">
+      <h2 className="text-[30px] font-semibold">Projects</h2>
+      <div className="flex flex-wrap justify-center items-center p-[50px] gap-[2vw]">
         
-        <div
-          className="relative rounded-lg cursor-pointer transition-transform duration-500 hover:scale-125 hover:z-50 z-0"
-        >
-          <img
-            src={pimg}
-            className="rounded-lg w-38 lg:w-[20vw] h-64 lg:h-[30vh] border border-gray-400  relative hover:opacity-50 z-10" // Set z-index for the image
-            alt="img"
-          />
-          <div className="absolute bottom-10 left-0 p-2 flex flex-col">
-            <p className="text-white text-xl font-bold">
-              Personal Portfolio
-            </p>
-            <div className="flex gap-7">
-              <p className=" text-white">2024</p>
-              <p className="text-white flex items-center gap-1">
-                Hello
-              </p>
-            </div>
-            <p className="text-white text-[10px]">
-              Hello
-            </p>
-          </div>
-        </div>
-
         {/* 2 */}
 
-        <div
-          className="relative rounded-lg cursor-pointer transition-transform duration-500 hover:scale-125 hover:z-50 z-0"
-        >
-          <img
-            src={pimg}
-            className="rounded-lg w-38 lg:w-[20vw] h-64 lg:h-[30vh] border border-gray-400  relative hover:opacity-50 z-10" // Set z-index for the image
-            alt="img"
-          />
-          <div className="absolute bottom-10 left-0 p-2 flex flex-col">
-            <p className="text-white text-xl font-bold">
-              Personal Portfolio
-            </p>
-            <div className="flex gap-7">
-              <p className=" text-white">2024</p>
-              <p className="text-white flex items-center gap-1">
-                Hello
-              </p>
+        {
+          projects.map((p)=>(
+            <div className='flex flex-col w-[60vw] lg:w-[21vw]  bg-black  rounded-lg p-8 transition-transform duration-500 hover:scale-110'>
+          <img src={p.image} alt="" className=' object-cover rounded-md' /> 
+          <div className=' flex flex-col items-start bg-black mt-4'>
+            <div className='flex gap-3 flex-wrap'>
+              {
+                p.tags.map((s, index) => (
+                    <p key={index} className='text-orange font-semibold bg-slate-700 rounded-lg px-1 lg:px-3 py-1 text-md'>{s}</p>
+                  ))
+              }
+              
+              
             </div>
-            <p className="text-white text-[10px]">
-              Hello
-            </p>
+            <p className=' text-3xl font-bold mt-5'>{p.title}</p>
+            <p className='text-gray-500'>{p.date}</p>
+            <p className='mt-5 text-xl text-gray-400'>{`${p.description.substring(0,100)}`+ '....' }</p>
+            <div className='flex gap-12 lg:ml-8 lg:gap-28 mt-5'>
+              <a href={p.github} target='_black'><Button name={"Code"} logo={<FaCode />}/></a>
+              <a href={p.webapp} target='_black'><Button name={"Live"} logo={<GoLink />}/></a>
+            </div>
           </div>
         </div>
+          ))
+        }
 
+       
         {/* 3 */}
-
-        <div
-          className="relative rounded-lg cursor-pointer transition-transform duration-500 hover:scale-125 hover:z-50 z-0"
-        >
-          <img
-            src={pimg}
-            className="rounded-lg w-38 lg:w-[20vw] h-64 lg:h-[30vh] border border-gray-400  relative hover:opacity-50 z-10" // Set z-index for the image
-            alt="img"
-          />
-          <div className="absolute bottom-10 left-0 p-2 flex flex-col">
-            <p className="text-white text-xl font-bold">
-              Personal Portfolio
-            </p>
-            <div className="flex gap-7">
-              <p className=" text-white">2024</p>
-              <p className="text-white flex items-center gap-1">
-                Hello
-              </p>
+        {/* <div className='flex flex-col w-[60vw] lg:w-[21vw]  bg-black  rounded-lg p-8 transition-transform duration-500 hover:scale-110'>
+          <img src={pimg} alt="" className=' object-cover rounded-md' /> 
+          <div className=' flex flex-col items-start bg-black mt-4'>
+            <div className='flex gap-3 flex-wrap'>
+              {
+                skills.map((s, index) => (
+                    <p key={index} className='text-orange font-semibold bg-slate-700 rounded-lg px-1 lg:px-3 py-1 text-md'>{s}</p>
+                  ))
+              }           
+              
             </div>
-            <p className="text-white text-[10px]">
-              Hello
-            </p>
-          </div>
-        </div> 
-
-        {/* 4 */}
-
-        <div
-          className="relative rounded-lg cursor-pointer transition-transform duration-500 hover:scale-125 hover:z-50 z-0"
-        >
-          <img
-            src={pimg}
-            className="rounded-lg w-38 lg:w-[20vw] h-64 lg:h-[30vh] border border-gray-400  relative hover:opacity-50 z-10" // Set z-index for the image
-            alt="img"
-          />
-          <div className="absolute bottom-10 left-0 p-2 flex flex-col">
-            <p className="text-white text-xl font-bold">
-              Personal Portfolio
-            </p>
-            <div className="flex gap-7">
-              <p className=" text-white">2024</p>
-              <p className="text-white flex items-center gap-1">
-                Hello
-              </p>
+            <p className=' text-3xl font-bold mt-5'>Personal Portfolio</p>
+            <p className=''>Date 2024</p>
+            <p className='mt-5 text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae commodi itaque ab soluta aspernatur deleniti illum dolor distinctio?</p>
+            <div className='flex gap-12 lg:ml-8 lg:gap-28 mt-5'>
+              <Button name={"Code"} logo={<FaCode />}/>
+              <Button name={"Live"} logo={<GoLink />}/>
             </div>
-            <p className="text-white text-[10px]">
-              Hello
-            </p>
           </div>
         </div>
-
-        {/* 5 */}
-
-        <div
-          className="relative rounded-lg cursor-pointer transition-transform duration-500 hover:scale-125 hover:z-50 z-0"
-        >
-          <img
-            src={pimg}
-            className="rounded-lg w-38 lg:w-[20vw] h-64 lg:h-[30vh] border border-gray-400  relative hover:opacity-50 z-10" // Set z-index for the image
-            alt="img"
-          />
-          <div className="absolute bottom-10 left-0 p-2 flex flex-col">
-            <p className="text-white text-xl font-bold">
-              Personal Portfolio
-            </p>
-            <div className="flex gap-7">
-              <p className=" text-white">2024</p>
-              <p className="text-white flex items-center gap-1">
-                Hello
-              </p>
-            </div>
-            <p className="text-white text-[10px]">
-              Hello
-            </p>
-          </div>
-        </div>
+      */}
 
 
       </div>
