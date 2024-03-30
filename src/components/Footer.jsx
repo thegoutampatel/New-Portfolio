@@ -10,7 +10,7 @@ const Footer = () => {
       </p> */}
       <p className=' text-[10px] lg:text-[15px] text-white'>It was nice to have you here, see you around !!</p>
       <p className=' text-[8px] lg:text-[12px] text-white mt-5'>Developed with ❤️ by Goutam Patel </p>
-       <p className=' text-[10px] lg:text-[15px] text-white font-semibold'>Copyright ©️ 2020 | All Rights Reserved</p>
+       <p className=' text-[10px] lg:text-[15px] text-white font-semibold'>Copyright ©️ 2024 | All Rights Reserved</p>
     </footer>
   )
 }

@@ -22,8 +22,8 @@ const About = () => {
           ></path>
         </svg>
       </div>
-      <div className='flex justify-center flex-col items-center'>
-        <h2 className='text-[30px] font-semibold lg:mt-16 mt-10'>Qualifications</h2>
+      <div className='flex justify-center flex-col items-center pb-8'>
+        <h2 className='text-[30px] font-semibold lg:mt-16 mt-10 mb-10'>Qualifications</h2>
 
         <VerticalTimeline>
           {education.map((education, index) => (

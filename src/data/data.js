@@ -384,7 +384,7 @@ export const education = [
     id: 0,
     // img: "https://drive.google.com/file/d/1BR8MVTMEQaj4R7RgLAxqNfkxyJPyN9kz/view?usp=sharing",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-eb0d0.appspot.com/o/PatelCollege%20(1).jpg?alt=media&token=532de1cf-987c-4bc2-acf0-17fcc82e454a",
+      "https://ik.imagekit.io/t10dk191z/Portfolio/Education/PatelCollege.jpeg?updatedAt=1711808861161",
     school: "Patel College of Science and Technology, Indore",
     date: "Aug 2022 - Jun 2026",
     grade: "8.41 CGPA",
@@ -394,7 +394,7 @@ export const education = [
   {
     id: 1,
     image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-eb0d0.appspot.com/o/SwarajBalNiketan%20(1).png?alt=media&token=bf9e2ae8-b09c-413c-9e66-2f84cc478d43",
+      "https://ik.imagekit.io/t10dk191z/Portfolio/Education/prabhat.avif?updatedAt=1711820644233",
     school: "Prabhat Convent H S Scool, Bedia",
     date: "Apr 2021 - Apr 2022",
     grade: "81%",
@@ -404,7 +404,7 @@ export const education = [
   {
     id: 2,
     image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-eb0d0.appspot.com/o/AzollaInstitute.jpeg?alt=media&token=667c7fc6-f81c-46c1-861d-24f1eb796c7d",
+      "https://ik.imagekit.io/t10dk191z/Portfolio/Education/AzollaInstitute%20(1).jpeg?updatedAt=1711808861189",
     school: "Azolla Institute, Sanawad",
     date: "Apr 2020 - Apr 2021",
     grade: "79.3%",

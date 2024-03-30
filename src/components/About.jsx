@@ -38,45 +38,10 @@ const About = () => {
         </a>
        
       </div>
-      <div className="about--right">
-          <img src={myimg} alt="" className='home--image'/>
+      <div className="mt-10 lg:mt-0 self-center">
+          <img src={myimg} alt="" className=' rounded-full h-[40vh] border-orange border-2 ml-3 lg:ml-0'/>
       </div>
 
-
-
-
-      {/* <div class="about--right">
-        <p class="about--tech">Technologies I use</p>
-        <div class="tech">
-          <div>
-            <img src="./Images/html.svg" alt="html" />
-          </div>
-          <div>
-            <img src="./Images/css.svg" alt="css" />
-          </div>
-          <div>
-            <img src="./Images/js.svg" alt="js" />
-          </div>
-          <div>
-            <img src="./Images/reactjs-icon.svg" alt="React-js" />
-          </div>
-          <div>
-            <img src="./Images/tailwindcss-icon.svg" alt="Tailwind" />
-          </div>
-          <div>
-            <img src="./Images/java-icon.svg" alt="java" />
-          </div>
-          <div>
-            <img src="./Images/git.svg" alt="git" />
-          </div>
-          <div>
-            <img src="./Images/github.svg" alt="github" />
-          </div>
-          <div>
-            <img src="./Images/figma.svg" alt="figma" />
-          </div>
-        </div>
-      </div> */}
     </section>
   );
 }
