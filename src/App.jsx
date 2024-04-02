@@ -9,10 +9,13 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { useMediaQuery } from 'react-responsive';
 import MobileNav from './components/MobileNav'
+import LocomotiveScroll from "locomotive-scroll";
 
 const App = () => {
   const isMobile = window.innerWidth <= 768;
   const isDesktop = window.innerWidth >= 768;
+
+  const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <div>
