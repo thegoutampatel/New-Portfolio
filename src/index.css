@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;  
 
+
+@font-face {
+  font-family: ranga;
+  src: url(/public/fonts/moranga.ttf);
+}
+
+@font-face {
+  font-family: gem;
+  src: url(/public/fonts/Gilroy-Bold.otf);
+}
+
+@font-face {
+  font-family: heading;
+  src: url(/public/fonts/Heading-Now-Variable.ttf);
+}
+
+
+
+
 *,
 *::before,
 *::after {
@@ -136,6 +155,7 @@ body {
       align-items: center;
       gap: 10rem;
       padding: 10rem 5rem;
+      max-height: 60vh;
     }
   
     .about--left,

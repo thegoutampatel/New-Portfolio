@@ -7,9 +7,6 @@ import { GoLink } from "react-icons/go";
 import {projects} from '../data/data'
 const Projects = () => {
 
-
-  const skills = ["react", "css", "html", "js", "nodejs", "tailwind"];
-
   return (
     <section id="projects">
       <div className="custom-shape-divider-top-1639338384">
@@ -32,7 +29,7 @@ const Projects = () => {
 
         {
           projects.map((p)=>(
-            <div className='flex flex-col w-[60vw] lg:w-[21vw]  bg-black  rounded-lg p-8 transition-transform duration-500 hover:scale-110'>
+            <div key={p.id} className='flex flex-col w-[60vw] lg:w-[21vw]  bg-black  rounded-lg p-8 transition-transform duration-500 hover:scale-110'>
           <img src={p.image} alt="" className=' object-cover rounded-md' /> 
           <div className=' flex flex-col items-start bg-black mt-4'>
             <div className='flex gap-3 flex-wrap'>
@@ -55,32 +52,7 @@ const Projects = () => {
         </div>
           ))
         }
-
-       
-        {/* 3 */}
-        {/* <div className='flex flex-col w-[60vw] lg:w-[21vw]  bg-black  rounded-lg p-8 transition-transform duration-500 hover:scale-110'>
-          <img src={pimg} alt="" className=' object-cover rounded-md' /> 
-          <div className=' flex flex-col items-start bg-black mt-4'>
-            <div className='flex gap-3 flex-wrap'>
-              {
-                skills.map((s, index) => (
-                    <p key={index} className='text-orange font-semibold bg-slate-700 rounded-lg px-1 lg:px-3 py-1 text-md'>{s}</p>
-                  ))
-              }           
-              
-            </div>
-            <p className=' text-3xl font-bold mt-5'>Personal Portfolio</p>
-            <p className=''>Date 2024</p>
-            <p className='mt-5 text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae commodi itaque ab soluta aspernatur deleniti illum dolor distinctio?</p>
-            <div className='flex gap-12 lg:ml-8 lg:gap-28 mt-5'>
-              <Button name={"Code"} logo={<FaCode />}/>
-              <Button name={"Live"} logo={<GoLink />}/>
-            </div>
-          </div>
-        </div>
-      */}
-
-
+        
       </div>
     </section>
   );

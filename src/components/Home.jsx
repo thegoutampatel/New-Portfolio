@@ -11,8 +11,8 @@ import { FaLinkedin } from "react-icons/fa";
 const Home = () => {
   return (
     <section id="home">
-      <div class="animation-area">
-        <ul class="box-area">
+      <div className="animation-area">
+        <ul className="box-area">
           <li></li>
           <li></li>
           <li></li>
@@ -51,7 +51,7 @@ const Home = () => {
         </div>
       </div>
       <div className=''>
-        <a href='#about' class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+        <a href='#about' className="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
       </div>
     </section>
   );

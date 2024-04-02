@@ -1,0 +1,4 @@
+.imagediv{
+    display: flex;
+    flex-direction: row;
+}

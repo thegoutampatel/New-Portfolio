@@ -1,13 +1,8 @@
-import React from 'react'
-
-
-import {projects} from '../data/data'
+import React from "react";
+import { skills } from "../data/data";
 const Skills = () => {
-
-
-
   return (
-    <section className='relative min-h-[80vh] w-full bg-blue text-grey'>
+    <section id="skills" className="relative min-h-[80vh] w-full bg-blue text-grey">
       <div className="custom-shape-divider-top-1639338384">
         <svg
           data-name="Layer 1"
@@ -21,13 +16,29 @@ const Skills = () => {
           ></path>
         </svg>
       </div>
-     <div className='flex justify-center'>
-      <h2 className="text-[30px] font-semibold lg:mt-16 mt-10">Skills</h2>
-     </div>
-     
-      
+      <div className="flex justify-center flex-col items-center">
+        {/* <h2 className="text-[30px] font-semibold lg:mt-16 mt-10">Skills</h2>   */}
+        <h1 className=" text-9xl font-thin font-[gem] mb-2 mt-20">
+          Things I'm <span className=" text-black">good</span> at
+        </h1>
+        <h2 className=" text-3xl lg:text-5xl font-[gem] mb-16 mt-1">
+          skills, interests, passion and hobbies
+        </h2>
+
+        <div className="flex flex-wrap  mt-10  mb-16 lg:mb-0 lg:mt-16 gap-5 lg:gap-8 max-w-[80vw]">
+          {skills[0].goodat.map((skill) => (
+            <div key={skill.name}>
+              <img
+                src={skill.image}
+                alt={skill.name}
+                className=" lg:h-[15vh] md:h-[15vh] sm:h-[15vh] h-[8vh] w-full border px-2 py-1 bg-white rounded-lg"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
-}
+};
 
-export default Skills
+export default Skills;

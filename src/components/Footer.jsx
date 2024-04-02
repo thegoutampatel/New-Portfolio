@@ -3,7 +3,7 @@ import './Footer.css'
 import heart from '../assets/images/heart.svg'
 const Footer = () => {
   return (
-    <footer className='flex flex-col items-center justify-center min-h-32 mb-24 lg:mb-0'>
+    <footer className='flex flex-col items-center justify-center min-h-32'>
       {/* <p>
         Thank You for checking out my Work!
         Made by <strong>Goutam Patel, 2023</strong>
