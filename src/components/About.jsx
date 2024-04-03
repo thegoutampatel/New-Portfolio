@@ -3,7 +3,8 @@ import myimg from '../assets/images/me.jpg'
 import arrow from '../assets/images/arrow.svg'
 import downImg from '../assets/images/download.svg'
 import Button from './Button'
-import { VscCloudDownload } from "react-icons/vsc";
+import {Bio} from '../data/data'
+
 
 const About = () => {
   return (
@@ -34,7 +35,7 @@ const About = () => {
             specifically focusing on the MERN stack. My goal is to acquire the
             skills needed to create responsive websites
           </p>
-          <a href="./files/GoutamPatel_Resume.pdf" className="resume" download="">
+          <a href={Bio.resume} className="resume" download="">
           <Button name={"Resume"} src={downImg}/>
           </a>
         
