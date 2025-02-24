@@ -20,11 +20,11 @@ export const skills = [
   {
     title: "fullStack",
     goodat: [
-      {
-        name: "Node Js",
-        image:
-          "https://ik.imagekit.io/t10dk191z/Portfolio/Skills/node.webp?updatedAt=1712068074431",
-      },
+      // {
+      //   name: "Node Js",
+      //   image:
+      //     "https://ik.imagekit.io/t10dk191z/Portfolio/Skills/node.webp?updatedAt=1712068074431",
+      // },
       {
         name: "React Js",
         image:
@@ -122,6 +122,25 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    id: 12,
+    title: "Vemini",
+    date: "Jan 2025 - Jan 2025",
+    description:
+    "Built a Google Gemini clone using HTML, CSS, JavaScript and React focusing on responsive design and user experience.",
+    image:
+      "https://ik.imagekit.io/muc6btxukh/Vemini.png?updatedAt=1740412305780",
+    tags: [
+      "HTML",
+      "JavaScript",
+      "React Js",
+      "Context Api",
+      "API",
+    ],
+    category: "FrontEnd",
+    github: "https://github.com/thegoutampatel/Vimini",
+    webapp: "https://vemini.vercel.app/",
+  },
   {
     id: 11,
     title: "MovieWeb",
