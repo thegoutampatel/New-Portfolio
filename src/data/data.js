@@ -9,7 +9,7 @@ export const Bio = {
   description:
     "I am currently an undergraduate student pursuing a Bachelor of Technology in Computer Science and Engineering. Alongside my studies, I am actively learning web development, specifically focusing on the MERN stack. My goal is to acquire the skills needed to create responsive websites",
   github: "https://github.com/thegoutampatel",
-  resume:"https://drive.google.com/file/d/1CNyQLfneZ9qAKoFdKRbWfNfwLLY9Oa65/view?usp=sharing",
+  resume:"https://drive.google.com/file/d/1QaU4r6_NacGPvyxzTXiONqHYHYqu5Yo2/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/goutam-patel/",
   twitter: "https://twitter.com/Goutampatel_01",
   insta: "https://www.instagram.com/gm__patel_01/",
