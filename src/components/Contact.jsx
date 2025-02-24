@@ -31,10 +31,10 @@ const Contact = () => {
       </div>
       <p>Feel free to get in touch, If you have any suggestions or any oppurtunities please Email me and I'll get back to you soon</p>
       <div className='flex gap-12 mt-8'>
-        <a href=""><FaLinkedin className=' text-[30px] hover:text-[#ff5722]'/></a>
-        <a href=""><FaGithub className=' text-[30px] hover:text-[#ff5722]'/></a>
+        <a href="https://www.linkedin.com/in/goutam-patel/"><FaLinkedin className=' text-[30px] hover:text-[#ff5722]'/></a>
+        <a href="https://github.com/thegoutampatel"><FaGithub className=' text-[30px] hover:text-[#ff5722]'/></a>
         <a href=""><FaXTwitter className=' text-[30px] hover:text-[#ff5722]'/></a>
-        <a href=""><FiInstagram className=' text-[30px] hover:text-[#ff5722]'/></a>
+        <a href="https://www.instagram.com/gm__patel_01/"><FiInstagram className=' text-[30px] hover:text-[#ff5722]'/></a>
         
       </div>
     </div>
